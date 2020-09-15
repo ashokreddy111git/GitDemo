@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="listeners"/>
+  </listeners>
+  <test name="Validating navigation Bar(failed)" parallel="tests">
+    <classes>
+      <class name="validateNavigationBar">
+        <methods>
+          <include name="Intilize"/>
+          <include name="validate"/>
+        </methods>
+      </class> <!-- validateNavigationBar -->
+      <class name="validateAssertions">
+        <methods>
+          <include name="Intilize"/>
+        </methods>
+      </class> <!-- validateAssertions -->
+      <class name="HomePage">
+        <methods>
+          <include name="Intilize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- HomePage -->
+    </classes>
+  </test> <!-- Validating navigation Bar(failed) -->
+  <test name="Validating title in the Page(failed)" parallel="tests">
+    <classes>
+      <class name="validateNavigationBar">
+        <methods>
+          <include name="Intilize"/>
+        </methods>
+      </class> <!-- validateNavigationBar -->
+      <class name="validateAssertions">
+        <methods>
+          <include name="Intilize"/>
+          <include name="validate"/>
+        </methods>
+      </class> <!-- validateAssertions -->
+      <class name="HomePage">
+        <methods>
+          <include name="Intilize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- HomePage -->
+    </classes>
+  </test> <!-- Validating title in the Page(failed) -->
+  <test name="Validating User login(failed)" parallel="tests">
+    <classes>
+      <class name="validateNavigationBar">
+        <methods>
+          <include name="Intilize"/>
+        </methods>
+      </class> <!-- validateNavigationBar -->
+      <class name="validateAssertions">
+        <methods>
+          <include name="Intilize"/>
+        </methods>
+      </class> <!-- validateAssertions -->
+      <class name="HomePage">
+        <methods>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
+          <include name="Intilize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- HomePage -->
+    </classes>
+  </test> <!-- Validating User login(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,9 @@
+14:02:36.991 [TestNG] INFO  base - restricteduser
+14:03:12.284 [TestNG] INFO  base - logged in sucessfully
+14:03:12.551 [TestNG] INFO  base - non restricted user
+20:55:54.100 [main] INFO  base - logged in sucessfully
+20:55:55.370 [main] INFO  base - non restricted user
+20:58:17.118 [main] INFO  base - navigation bar is displying
+22:11:01.246 [TestNG] INFO  base - navigation bar is displying
+22:11:07.194 [TestNG] INFO  base - logged in sucessfully
+22:11:07.903 [TestNG] INFO  base - restricteduser
